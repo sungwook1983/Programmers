@@ -103,7 +103,7 @@ public class LevelThree {
     }
 
     //정수 삼각형
-    public int solution(int[][] triangle) {
+    public static int solution(int[][] triangle) {
         //첫번째 ROW는 계산할 필요가 없으니 두번째 ROW부터 루프를 실행
         for (int i = 1; i < triangle.length; i++) {
             //제일 첫 COLUMN과 제일 마지막 COLUMN은 상위 ROW의 처음과 마지막 COLUMN만 더해준 후 해당 COLUMN에 값을 저장한다.
@@ -124,7 +124,7 @@ public class LevelThree {
     }
 
     //이중우선순위큐
-    public int[] solution(String[] operations) {
+    public static int[] solution(String[] operations) {
         int[] answer = new int[]{0, 0};
 
         List<Integer> result = new ArrayList<>();

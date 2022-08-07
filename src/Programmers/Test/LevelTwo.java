@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LevelTwo {
     //기능개발
-    public int[] solution(int[] progresses, int[] speeds) {
+    public static int[] solution(int[] progresses, int[] speeds) {
         int[] answer = {};
         int iComplete = 0;
         List<Integer> result = new ArrayList<>();
@@ -50,7 +50,7 @@ public class LevelTwo {
     }
 
     //위장
-    public int solution(String[][] clothes) {
+    public static int solution(String[][] clothes) {
         //최소 하나의 부위는 입어야 하므로 결과에서 모두 안입는 경우를 제외 하도록 시작값은 -1로 설정
         int answer = -1;
         int iCombination = 1;
@@ -75,7 +75,7 @@ public class LevelTwo {
     }
 
     //올바른 괄호
-    public boolean solution(String s) {
+    public static boolean solution(String s) {
         boolean answer = true;
 
         //'(' 와 ')'의 갯수를 구한다

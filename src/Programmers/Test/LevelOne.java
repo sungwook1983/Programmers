@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class LevelOne {
     //신규 아이디 추천
-    public String solution(String new_id) {
+    public static String solution(String new_id) {
         String answer = "";
 
         //1단계 소문자 치환
@@ -57,7 +57,7 @@ public class LevelOne {
     }
 
     //키패드 누르기
-    public String solution(int[] numbers, String hand) {
+    public static String solution(int[] numbers, String hand) {
         String answer = "";
 
         HashMap<Integer, int[]> mapPoint = new HashMap<Integer, int[]>();
@@ -152,7 +152,7 @@ public class LevelOne {
     }
 
     //크레인 인형 뽑기
-    public int solution(int[][] board, int[] moves) {
+    public static int solution(int[][] board, int[] moves) {
         int answer = 0;
 
         //바구니
@@ -198,7 +198,7 @@ public class LevelOne {
     }
 
     //없는 숫자 더하기
-    public int solution(int[] numbers) {
+    public static int solution(int[] numbers) {
         int answer = 0;
 
         //없는 숫자를 찾기 편하게 int[]를 List<Integer>로 변환
@@ -218,7 +218,7 @@ public class LevelOne {
     }
 
     //음양 더하기
-    public int solution(int[] absolutes, boolean[] signs) {
+    public static int solution(int[] absolutes, boolean[] signs) {
         int answer = 0;
 
         for (int i = 0; i < absolutes.length; i++)
@@ -237,7 +237,7 @@ public class LevelOne {
     }
 
     //내적
-    public int solution(int[] a, int[] b) {
+    public static int solution(int[] a, int[] b) {
         int answer = 0;
 
         for (int i = 0; i < a.length; i++) {
@@ -273,7 +273,7 @@ public class LevelOne {
     }
 
     //폰켓몬
-    public int solutionPhoneketmon(int[] nums) {
+    public static int solutionPhoneketmon(int[] nums) {
         int answer = 0;
 
         //최대 가질 수 있는 수량
@@ -297,7 +297,7 @@ public class LevelOne {
     }
 
     //K번째수
-    public int[] solution(int[] array, int[][] commands) {
+    public static int[] solution(int[] array, int[][] commands) {
 
         // 결과를 commands의 크기만큼 설정
         int[] answer = new int[commands.length];
